@@ -13,9 +13,9 @@ jobs:
 
     # ✅ Provide AWS credentials to all steps
     env:
-      AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
-      SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
-      token: ${{ secrets.token }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+      AWS_SESSION_TOKEN: ${{ secrets.token }}
 
     steps:
       - name: Checkout code
